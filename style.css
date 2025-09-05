@@ -1,0 +1,43 @@
+/* Smooth scrolling untuk anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Warna ikon sosial media */
+.bi-facebook {
+    color: #1877F2; /* Biru resmi Facebook */
+}
+
+.bi-instagram {
+    color: #E1306C; /* Gradien Instagram bisa ditiru dengan warna ini */
+}
+
+/* Navbar fixed dengan prioritas tinggi */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; /* Bootstrap 5 navbar default z-index */
+}
+
+/* Memberi jarak konten dari navbar fixed */
+#main {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+}
+
+/* Tambahan responsif untuk input dan tombol */
+@media (max-width: 576px) {
+    #main .row > .col-md-4,
+    #main .row > .col-md-2,
+    #main .row > .col-md-6 {
+        margin-bottom: 10px;
+    }
+}
+
+/* Animasi hover untuk ikon sosial media */
+.bi-facebook:hover,
+.bi-instagram:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
